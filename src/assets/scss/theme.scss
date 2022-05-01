@@ -1,0 +1,57 @@
+@mixin theme_skin() {
+    .App {
+        background-color: rgba($color: $dark-theme-bg-900, $alpha: 0.9);
+    }
+
+    .navigation-bar {
+        .navbar-child {
+            background-color: $dark-theme-bg-700;
+            border-color: $dark-theme-bg-500;
+
+            .icon-3d {
+                background-color: $dark-theme-bg-500;
+                color: $dark-theme-text-900;
+            }
+        }
+    }
+
+    .home {
+        .user-name {
+            color: $dark-theme-text-100;
+        }
+
+        .user-description {
+            color: $dark-theme-text-900;
+        }
+    }
+
+    .projects {
+        .card {
+            background-color: $dark-theme-bg-500;
+        }
+
+        .project-name {
+            color: $dark-theme-text-300;
+        }
+    }
+
+    .filter-btns {
+        button {
+          background-color: $dark-theme-bg-300;
+          color: $dark-theme-text-300
+        };
+      }
+
+    .services {
+        .card {
+            background-color: $dark-theme-bg-500;
+        }
+        .service-name {
+            color: $dark-theme-text-300;
+        }
+        .service-tag {
+            background-color: $dark-theme-bg-100;
+            color: $dark-theme-text-500;
+        }
+    }
+}
