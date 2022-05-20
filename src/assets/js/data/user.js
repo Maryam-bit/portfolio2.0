@@ -2,7 +2,7 @@ const user = {
     about: {
         name: "Maryam Noor",
         profession: "Full Stack Developer",
-        description: "Hello! Welcome here. Let me break the ice and introduce myself. I am Maryam a energetic and dedicated professional web & mobile hybrid Application Developer. I am always looking for clients who challenge me creatively. I know how to survive in this industry and I want to help your business do the same."
+        description: "Hello! Welcome here. Let me break the ice and introduce myself. I am Maryam an energetic and dedicated Software, AI/ML, Embedded and devops engineer. I am always looking for clients who challenge me creatively. Alway wanted to learn new things every single day."
     },
     projects: [
         {
@@ -78,6 +78,7 @@ const user = {
             tag: [
                 "Solidity",
                 "Web3.js",
+                "Blockchain"
             ],
         },
         {
@@ -95,7 +96,12 @@ const user = {
                 "Rust",
                 "C",
                 "MQTT",
-                "InfluxDB"
+                "InfluxDB",
+                "Python",
+                "AI/ML",
+                "Embedded Programming",
+                "Computer Vision",
+                "Networking"
             ],
         },
         {
@@ -118,8 +124,7 @@ const user = {
             tag: [
                 "React",
                 "Redux",
-                "Vue2",
-                "Vue3",
+                "Vue",
                 "Bootstrap",
                 "Material UI",
                 "Quasar",
@@ -130,7 +135,6 @@ const user = {
                 "NextJS",
                 "Vite",
                 "Tailwind-css",
-                "ChartJS",
                 "D3Js",
                 "Typescript",
             ],
