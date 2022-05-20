@@ -170,6 +170,13 @@ body {
 }
 
 .services {
+  .card .card-body {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .service-img {
     width: 45px;
   }
@@ -186,7 +193,7 @@ body {
     border-radius: 15px;
     margin: 3px;
     border: none;
-    font-size: $font-size-sm;
+    font-size: $font-size-xm;
     color: $text-color-900;
     font-weight: 600;
   }
