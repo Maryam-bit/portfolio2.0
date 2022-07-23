@@ -1,15 +1,15 @@
 @mixin theme_skin() {
     .App {
-        background-color: rgba($color: $dark-theme-bg-900, $alpha: 0.9);
+        background-color: rgba($color: $dark-theme-bg-900, $alpha: 0.95);
     }
 
     .navigation-bar {
         .navbar-child {
-            background-color: $dark-theme-bg-700;
-            border-color: $dark-theme-bg-500;
+            background-color: $dark-theme-bg-800;
+            border-color: $dark-theme-bg-700;
 
             .icon-3d {
-                background-color: $dark-theme-bg-500;
+                background-color: $dark-theme-bg-700;
                 color: $dark-theme-text-900;
             }
         }
