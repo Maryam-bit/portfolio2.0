@@ -82,7 +82,7 @@ const NavigationBar = ({ setDarkTheme, darkTheme }) => {
             :
             <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)}  className="fad fa-moon-stars icon-3d" onClick={() => { setDarkTheme(false) }}></i>
         }
-        <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(7)}  className="fas fa-volume-mute icon-3d"></i>
+        <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(7)}  className="fad fa-pencil icon-3d"></i>
         {/* <i className="fad fa-volume icon-3d"></i> */}
         {/* <i className="fad fa-box-full icon-3d"></i> */}
         {/* <i className="fad fa-brackets-curly icon-3d"></i> */}
