@@ -21,6 +21,7 @@ const Projects = () => {
   console.log(category)
   return (
     <div className='projects'>
+      <h1 className='app-heading text-center'>Projects</h1>
       <div className="row mb-4">
         <FilterButtons filterCategory={filterCategory} projectCategories={projectCategories} />
       </div>
