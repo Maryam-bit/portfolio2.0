@@ -2,6 +2,9 @@
     .App {
         background-color: rgba($color: $dark-theme-bg-900, $alpha: 0.95);
     }
+    .app-heading {
+        color: $dark-theme-text-100;
+    }
 
     .navigation-bar {
         .navbar-child {
@@ -16,12 +19,17 @@
     }
 
     .home {
-        .user-name {
-            color: $dark-theme-text-100;
-        }
-
         .user-description {
             color: $dark-theme-text-900;
+            b {
+                color: $dark-theme-text-300;
+            }
+            span {
+                color: $dark-theme-text-1000;
+            }
+        }
+        .timestamp {
+            color: $dark-theme-text-1000;
         }
     }
 

@@ -1,13 +1,25 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import user from '../assets/js/data/user'
-
+import moment from 'moment';
 const Home = () => {
+  const [dateToFormat, setdateToFormat] = useState(moment().format('MMMM Do YYYY, h:mm:ss a'))
+  const updateTime = () => {
+    let clock = moment().format('MMMM Do YYYY, h:mm:ss a')
+    setdateToFormat(
+      clock
+    );
+  }
+  setInterval(updateTime, 1000)
+
   return (
-      <div className='home'>
-        <h3 className='user-name'>{user.about.name}</h3>
-        <p className='breakpoint'>___________________</p>
-        <h6 className='user-profession'>{user.about.profession}</h6>
-        <span className='user-description'>{user.about.description}</span>
+      <div className='home px-5'>
+        <h1 className='timestamp'>{dateToFormat}</h1>
+        <h1 className='user-name app-heading'>{user.about.name}</h1>
+        {/* <p className='breakpoint'>___________________</p> */}
+        {/* <h6 className='user-profession'>{user.about.profession}</h6> */}
+        {/* <span className='user-description'>{user.about.description}</span> */}
+        <span className='user-description' dangerouslySetInnerHTML={{__html: user.about.description}}></span>
+
       </div>
   )
 }

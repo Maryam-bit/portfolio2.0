@@ -2,7 +2,8 @@ const user = {
     about: {
         name: "Maryam Noor",
         profession: "Full Stack Developer",
-        description: "Hello! Welcome here. Let me break the ice and introduce myself. I am Maryam an energetic and dedicated Software, AI/ML, Embedded and devops engineer. I am always looking for clients who challenge me creatively. Alway wanted to learn new things every single day."
+        description: "Multistack developer, love finding solutions for a technical problems. <br> Experimenting AIOT and exploring <b>blockchain</b>. \n Currently working at <b>Cowlar.com</b>. Previosly at <b>Fiverr</b>.<br><span>~~~~~~~</span><br> Dreaming about my own technical comapany and team for designing technical solutions."
+        // description: "Hello! Welcome here. Let me break the ice and introduce myself. I am Maryam an energetic and dedicated Software, AI/ML, Embedded and devops engineer. I am always looking for clients who challenge me creatively. Alway wanted to learn new things every single day."
     },
     projects: [
         {

@@ -1,7 +1,10 @@
 @import "./variable.scss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@900&display=swap');
-@import './theme.scss';
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+@import './theme.scss';
 @import './responsive.scss';
 * {
   margin: 0px;
@@ -108,10 +111,23 @@ body {
   }
 }
 
+.app-heading {
+  font-family: 'Inconsolata', monospace;
+  color: $text-color-900;
+  font-weight: 600;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Crimson Text', serif;
+}
+
+.app-text {  }
+
 .home {
-  .user-name {
-    color: $text-color-900;
-    font-weight: 700;
+  .timestamp {
+    font-size: $font-size-xxm;
+    color: $text-color-300;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 3px;
+    font-weight: 900;
   }
 
   .breakpoint {
@@ -120,6 +136,7 @@ body {
 
   .user-profession {
     font-family: 'Cormorant Garamond', serif;
+    font-family: 'Inconsolata', monospace;
     color: $theme-color;
     font-size: $font-size-lg;
     font-weight: 600;
@@ -127,9 +144,17 @@ body {
 
   .user-description {
     font-family: 'Hahmlet', serif;
+    font-family: 'Inconsolata', monospace;
     color: $text-color-500;
     font-weight: 500;
-    font-size: $font-size-sm;
+    font-size: $font-size-md;
+    b {
+      color: $text-color-900;
+    }
+    span {
+      color: $text-color-300;
+      font-size: $font-size-xl;
+    }
   }
 }
 
