@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Project from '../components/Project'
 import user from '../assets/js/data/user'
 import FilterButtons from '../components/FilterButtons'
 import CardTopImage from '../components/cards/cardTopImage/CardTopImage'

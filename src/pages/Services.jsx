@@ -1,5 +1,4 @@
 import React from 'react'
-import Service from '../components/Service'
 import CardTagsBottom from '../components/cards/cardTagsBottom/CardTagsBottom'
 import user from '../assets/js/data/user'
 
