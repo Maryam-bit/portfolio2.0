@@ -1,10 +1,7 @@
 @import "./variable.scss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import './theme.scss';
 @import './responsive.scss';
@@ -30,7 +27,6 @@ body {
   min-height: 100vh;
   background-color: rgba($color: $light-theme-bg-300, $alpha: 0.9);
 }
-
 
 .navigation-bar {
   position: fixed;
@@ -161,7 +157,6 @@ body {
   }
 
   .user-profession {
-    font-family: 'Cormorant Garamond', serif;
     font-family: 'Inconsolata', monospace;
     color: $theme-color;
     font-size: $font-size-lg;
@@ -169,7 +164,6 @@ body {
   }
 
   .user-description {
-    font-family: 'Hahmlet', serif;
     font-family: 'Inconsolata', monospace;
     color: $text-color-500;
     font-weight: 500;
