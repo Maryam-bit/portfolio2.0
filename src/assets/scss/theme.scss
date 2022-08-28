@@ -2,11 +2,18 @@
     .App {
         background-color: rgba($color: $dark-theme-bg-900, $alpha: 0.95);
     }
-    .app-heading1, .app-heading4 {
+    
+    .app-heading1, .app-heading3, .app-heading4 {
         color: $dark-theme-text-100;
     }
+
     .app-heading6 {
         color: $dark-theme-text-1000;
+    }
+
+    .app-tag {
+        background-color: $dark-theme-bg-100;
+        color: $dark-theme-text-500;
     }
 
     .navigation-bar {
@@ -59,10 +66,6 @@
         }
         .service-name {
             color: $dark-theme-text-300;
-        }
-        .service-tag {
-            background-color: $dark-theme-bg-100;
-            color: $dark-theme-text-500;
         }
     }
 }

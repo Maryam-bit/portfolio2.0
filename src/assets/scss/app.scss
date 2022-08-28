@@ -124,7 +124,8 @@ body {
 }
 
 .app-heading3 {
-  @include app-heading(('Crimson Text', serif), 26px, 600)
+  margin-top: 5px;
+  @include app-heading(('Montserrat', sans-serif), 18px, 500)
 }
 
 .app-heading4 {
@@ -142,6 +143,16 @@ body {
 
 .app-text { 
   @include app-text(('Cormorant Garamond', serif), $font-size-md, 500, $text-color-500)
+}
+
+.app-tag {
+  padding: 2px 14px 2px 14px;
+  border-radius: 15px;
+  margin: 3px;
+  border: none;
+  font-size: $font-size-xm;
+  color: $text-color-900;
+  font-weight: 600;
 }
 
 .home {
@@ -186,36 +197,6 @@ body {
   .active {
     background-color: $theme-color !important;
     color: $dark-theme-text-100;
-  }
-}
-
-.services {
-  .card .card-body {
-    height: 210px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .service-img {
-    width: 45px;
-  }
-
-  .service-name {
-    font-size: $font-size-lg;
-  }
-
-  .service-tags {}
-
-  .service-tag {
-    padding: 2px 14px 2px 14px;
-    // background-color: $light-theme-bg-900;
-    border-radius: 15px;
-    margin: 3px;
-    border: none;
-    font-size: $font-size-xm;
-    color: $text-color-900;
-    font-weight: 600;
   }
 }
 
