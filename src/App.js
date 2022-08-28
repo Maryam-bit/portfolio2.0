@@ -2,8 +2,6 @@ import './assets/scss/app.scss';
 import NavigationBar from './components/NavigationBar';
 import React, { useState } from "react";
 import AppRouter from "./config/Route"
-import { Home, Projects } from "./components";
-import user from "./assets/js/data/user";
 
 function App() {
   const [active, setActive] = useState('home')
