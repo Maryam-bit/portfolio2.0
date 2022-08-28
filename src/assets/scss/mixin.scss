@@ -1,0 +1,13 @@
+@mixin app-heading($font-family:('Crimson Text', serif), $font-size, $font-weight:600, $color: $text-color-900) {
+    color: $color;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    font-size:  $font-size;
+}
+
+@mixin app-text($font-family:('Inconsolata', monospace), $font-size, $font-weight:400, $color: $text-color-500) {
+    color: $color;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    font-size:  $font-size;
+}

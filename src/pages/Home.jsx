@@ -13,8 +13,8 @@ const Home = () => {
 
   return (
       <div className='home px-5'>
-        <h1 className='timestamp'>{dateToFormat}</h1>
-        <h1 className='user-name app-heading'>{user.about.name}</h1>
+        <h1 className='app-heading6'>{dateToFormat}</h1>
+        <h1 className='user-name app-heading1'>{user.about.name}</h1>
         {/* <p className='breakpoint'>___________________</p> */}
         {/* <h6 className='user-profession'>{user.about.profession}</h6> */}
         {/* <span className='user-description'>{user.about.description}</span> */}

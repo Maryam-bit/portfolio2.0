@@ -4,8 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import './theme.scss';
 @import './responsive.scss';
+@import './mixin.scss';
+
 * {
   margin: 0px;
   padding: 0px;
@@ -111,25 +115,36 @@ body {
   }
 }
 
-.app-heading {
-  font-family: 'Inconsolata', monospace;
-  color: $text-color-900;
-  font-weight: 600;
-  font-family: 'Noto Serif', serif;
-  font-family: 'Crimson Text', serif;
+.app-heading1 {
+  @include app-heading(('Crimson Text', serif), null, 600)
 }
 
-.app-text {  }
+.app-heading2 {
+  @include app-heading(('Crimson Text', serif), 29px, 600)
+}
+
+.app-heading3 {
+  @include app-heading(('Crimson Text', serif), 26px, 600)
+}
+
+.app-heading4 {
+  @include app-heading(( 'Montserrat', sans-serif), 15px, 500, $text-color-1000)
+}
+
+.app-heading5 {
+  @include app-heading(('Crimson Text', serif), 20px, 600)
+}
+
+.app-heading6 {
+  letter-spacing: 3px;
+  @include app-heading(('Inconsolata', monospace), $font-size-xxm, 900, $text-color-300)
+}
+
+.app-text { 
+  @include app-text(('Cormorant Garamond', serif), $font-size-md, 500, $text-color-500)
+}
 
 .home {
-  .timestamp {
-    font-size: $font-size-xxm;
-    color: $text-color-300;
-    font-family: 'Inconsolata', monospace;
-    letter-spacing: 3px;
-    font-weight: 900;
-  }
-
   .breakpoint {
     color: $text-color-100;
   }
@@ -158,21 +173,6 @@ body {
   }
 }
 
-.projects {
-  .project-name {
-    color: $text-color-900;
-  }
-
-  .preview-link,
-  .code-link {
-    background-color: $theme-color;
-    margin-right: 5px;
-    padding: 2px 10px;
-    color: $dark-theme-text-100;
-    border-radius: 4px;
-  }
-}
-
 .filter-btns {
   button {
     border: none;
@@ -181,6 +181,7 @@ body {
     margin: 7px;
     padding: 7px 14px;
     border-radius: 7px;
+    font-weight: 500;
   }
   .active {
     background-color: $theme-color !important;

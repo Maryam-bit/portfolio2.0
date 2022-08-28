@@ -2,8 +2,11 @@
     .App {
         background-color: rgba($color: $dark-theme-bg-900, $alpha: 0.95);
     }
-    .app-heading {
+    .app-heading1, .app-heading4 {
         color: $dark-theme-text-100;
+    }
+    .app-heading6 {
+        color: $dark-theme-text-1000;
     }
 
     .navigation-bar {
