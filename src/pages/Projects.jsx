@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Project from '../components/Project'
 import user from '../assets/js/data/user'
 import FilterButtons from '../components/FilterButtons'
+import CardTopImage from '../components/cards/CardTopImage'
 
 const Projects = () => {
   const projectCategories = [...new Set(user.projects.map((Val) => Val.category))];
@@ -30,7 +31,7 @@ const Projects = () => {
           category.map((project, index) => (
             <div className="col-md-4 mb-4" key={index}>
               <div className="card border-0">
-                <Project project={project} />
+                <CardTopImage data={project} />
               </div>
             </div>
           ))
