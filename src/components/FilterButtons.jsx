@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const FilterButtons = ({ projectCategories, filterCategory }) => {
-  const [selected, setSelected] = useState('JAM Stack')
+  const [selected, setSelected] = useState('All')
   const handleSelectedFilter = (category) => {
     setSelected(category)
     filterCategory(category)
