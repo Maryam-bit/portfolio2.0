@@ -88,6 +88,7 @@ const user = {
             tag: [
                 "Figma",
                 "Adobe XD",
+                "Illustrator"
             ],
         },
         {
@@ -117,6 +118,7 @@ const user = {
                 "MongoDB",
                 "Firebase",
                 "Rust",
+                "Golang",
             ],
         },
         {
