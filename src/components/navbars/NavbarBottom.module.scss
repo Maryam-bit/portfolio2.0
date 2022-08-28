@@ -1,0 +1,82 @@
+@import "../../assets/scss/variable.scss";
+
+.navigation_bar {
+    position: fixed;
+    bottom: 2.2rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  
+    .navbar_child {
+      width: auto;
+      height: 77px;
+
+      border-radius: 15px;
+      padding: 4px;
+      box-shadow: 1px 11px 58px -11px rgba(0, 0, 0, 0.31);
+      -webkit-box-shadow: 1px 11px 58px -11px rgba(0, 0, 0, 0.31);
+      -moz-box-shadow: 1px 11px 58px -11px rgba(0, 0, 0, 0.31);
+  
+      &::after {
+        z-index: 2;
+        height: 30px;
+  
+      }
+  
+      .icon_3d {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 14px;
+        margin: 8px 4px;
+        -webkit-animatio: icon3d 200ms 10;
+        // animation: icon3d 200ms 10;
+        transition: 0.2s;
+        position: relative;
+        z-index: 2;
+        font-size: 22px;
+        position: relative;
+  
+        &:hover {
+          box-shadow: -1px 7px 29px -4px rgba(0, 0, 0, 0.06) inset;
+          -webkit-box-shadow: -1px 7px 29px -4px rgba(0, 0, 0, 0.06) inset;
+          -moz-box-shadow: -1px 7px 29px -4px rgba(0, 0, 0, 0.06) inset;
+          // transform: scale(2);
+          // margin: 0 2.1rem 4rem 3rem;
+          // bottom: 1rem;
+          //-webkit-animation: icon3d 200ms infinite;
+          // animation: icon3d 200ms infinite;
+  
+        }
+  
+      }
+    }
+  }
+  
+  
+  @keyframes icon3d {
+    0% {
+      text-shadow: 5px 4px $theme-color1, -5px -6px $theme-color2;
+    }
+  
+    25% {
+      text-shadow: -5px -6px $theme-color1, 5px 4px b $theme-color2
+    }
+  
+    50% {
+      text-shadow: 5px -4px $theme-color1, -8px 4px $theme-color2
+    }
+  
+    75% {
+      text-shadow: -8px -4px $theme-color1, -5px -4px $theme-color2;
+    }
+  
+    100% {
+      text-shadow: -5px 0 $theme-color1, 5px -4px $theme-color2
+    }
+  }
+  

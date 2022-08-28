@@ -1,10 +1,9 @@
 import './assets/scss/app.scss';
-import NavigationBar from './components/NavigationBar';
+import NavbarBottom from './components/navbars/NavbarBottom'
 import React, { useState } from "react";
 import AppRouter from "./config/Route"
 
 function App() {
-  const [active, setActive] = useState('home')
   const [darkTheme, setDarkTheme] = useState(true)
 
   return (
@@ -19,7 +18,7 @@ function App() {
           <div className='col-lg-2'>{darkTheme}</div>
         </div>
       </div>
-      <NavigationBar setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
+      <NavbarBottom setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
     </div>
     </div>
   );

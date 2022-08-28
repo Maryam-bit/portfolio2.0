@@ -16,16 +16,14 @@
         color: $dark-theme-text-500;
     }
 
-    .navigation-bar {
-        .navbar-child {
-            background-color: $dark-theme-bg-800;
-            border-color: $dark-theme-bg-700;
+    .app-navbar {
+        background-color: $dark-theme-bg-800;
+        border-color: $dark-theme-bg-700;
+    }
 
-            .icon-3d {
-                background-color: $dark-theme-bg-700;
-                color: $dark-theme-text-900;
-            }
-        }
+    .icon_3d {
+        background-color: $dark-theme-bg-700;
+        color: $dark-theme-text-900;
     }
 
     .home {

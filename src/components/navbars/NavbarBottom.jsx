@@ -1,5 +1,6 @@
 import React, {useRef} from 'react'
 import { Link } from "react-router-dom"
+import NavbarBottomStyles from './NavbarBottom.module.scss'
 
 
 const NavigationBar = ({ setDarkTheme, darkTheme }) => {
@@ -59,30 +60,30 @@ const NavigationBar = ({ setDarkTheme, darkTheme }) => {
     }
   }
   return (
-    <div className="navigation-bar">
-      <div className="navbar-child">
+    <div className={NavbarBottomStyles.navigation_bar}>
+      <div className={`${NavbarBottomStyles.navbar_child} app-navbar`}>
         <Link to="/">
-          <i ref={navItem1} onMouseOver={() => hovering(1)} onMouseOut={() => hoverOut(1)}  className="fa fa-house-damage icon-3d"></i>
+          <i ref={navItem1} onMouseOver={() => hovering(1)} onMouseOut={() => hoverOut(1)} className={`${NavbarBottomStyles.icon_3d} fa fa-house-damage icon_3d`}></i>
         </Link>
         <Link  to="projects">
-          <i ref={navItem2} onMouseOver={() => hovering(2)} onMouseOut={() => hoverOut(2)} className="fa fa-lightbulb icon-3d"></i>
+          <i ref={navItem2} onMouseOver={() => hovering(2)} onMouseOut={() => hoverOut(2)} className={`${NavbarBottomStyles.icon_3d} fa fa-lightbulb icon_3d`}></i>
         </Link>
         <Link to="services">
-          <i  ref={navItem3} onMouseOver={() => hovering(3)} onMouseOut={() => hoverOut(3)} className="fas fa-hand-holding icon-3d"></i>
+          <i  ref={navItem3} onMouseOver={() => hovering(3)} onMouseOut={() => hoverOut(3)} className={`${NavbarBottomStyles.icon_3d} fas fa-hand-holding icon_3d`}></i>
         </Link>
         <a href="https://github.com/Maryam-bit" target="_blank">
-          <i ref={navItem4} onMouseOver={() => hovering(4)} onMouseOut={() => hoverOut(4)} className="fab fa-github icon-3d"></i>
+          <i ref={navItem4} onMouseOver={() => hovering(4)} onMouseOut={() => hoverOut(4)} className={`${NavbarBottomStyles.icon_3d} fab fa-github icon_3d`}></i>
         </a>
         <a href="https://www.linkedin.com/in/maryam-noor-/" target="_blank">
-          <i ref={navItem5} onMouseOver={() => hovering(5)} onMouseOut={() => hoverOut(5)} className="fab fa-linkedin icon-3d"></i>
+          <i ref={navItem5} onMouseOver={() => hovering(5)} onMouseOut={() => hoverOut(5)} className={`${NavbarBottomStyles.icon_3d} fab fa-linkedin icon_3d`}></i>
         </a>
         {
           darkTheme == false ?
-            <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)}  className="fas fa-sun icon-3d" onClick={() => { setDarkTheme(true) }}></i>
+            <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fas fa-sun icon_3d`} onClick={() => { setDarkTheme(true) }}></i>
             :
-            <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)}  className="fad fa-moon-stars icon-3d" onClick={() => { setDarkTheme(false) }}></i>
+            <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fad fa-moon-stars icon_3d`} onClick={() => { setDarkTheme(false) }}></i>
         }
-        <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(7)}  className="fad fa-pencil icon-3d"></i>
+        <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(7)} className={`${NavbarBottomStyles.icon_3d} fad fa-pencil icon_3d`} ></i>
         {/* <i className="fad fa-volume icon-3d"></i> */}
         {/* <i className="fad fa-box-full icon-3d"></i> */}
         {/* <i className="fad fa-brackets-curly icon-3d"></i> */}
