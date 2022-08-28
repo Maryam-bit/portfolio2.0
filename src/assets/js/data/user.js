@@ -11,14 +11,14 @@ const user = {
             image: "covid-19-tracker",
             previewLink: "https://www.facebook.com",
             codeLink: "https://www.instagram.com",
-            category: "MERN Stack"
+            category: "Front-End"
         },
         {
             name: "Expense tracker",
             image: "expense-tracker",
             previewLink: "https://www.facebook.com",
             codeLink: "https://www.instagram.com",
-            category: "MEVN Stack"
+            category: "Front-End"
         },
         {
             name: "Shoe Store",
@@ -32,14 +32,14 @@ const user = {
             image: "olx-clone",
             previewLink: "https://www.facebook.com",
             codeLink: "https://www.instagram.com",
-            category: "Web 3.0"
+            category: "Front-End"
         },
         {
             name: "Crown Clothing Store",
             image: "crown-clothing-store",
             previewLink: "https://www.facebook.com",
             codeLink: "https://www.instagram.com",
-            category: "JAM Stack"
+            category: "Front-End"
         },
     ],
     services: [
