@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import user from '../assets/js/data/user'
-import FilterButtons from '../components/FilterButtons'
+import { FilterButtons } from '../stories/FilterButtons'
 import CardTopImage from '../components/cards/cardTopImage/CardTopImage'
 
 const Projects = () => {
