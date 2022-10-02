@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import user from '../assets/js/data/user'
 import moment from 'moment';
+import { Image } from 'react-bootstrap';
+import img from '../assets/images/iot.png'
 const Home = () => {
   const [dateToFormat, setdateToFormat] = useState(moment().format('MMMM Do YYYY, h:mm:ss a'))
   const updateTime = () => {
@@ -19,7 +21,7 @@ const Home = () => {
         {/* <h6 className='user-profession'>{user.about.profession}</h6> */}
         {/* <span className='user-description'>{user.about.description}</span> */}
         <span className='user-description' dangerouslySetInnerHTML={{__html: user.about.description}}></span>
-
+        <Image src={img}/>
       </div>
   )
 }
