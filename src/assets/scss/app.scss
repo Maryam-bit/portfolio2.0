@@ -1,11 +1,11 @@
 @import "./variable.scss";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
-@import './theme.scss';
-@import './responsive.scss';
-@import './mixin.scss';
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+@import "./theme.scss";
+@import "./responsive.scss";
+@import "./mixin.scss";
 
 * {
   margin: 0px;
@@ -35,34 +35,44 @@ body {
 }
 
 .app-heading1 {
-  @include app-heading(('Crimson Text', serif), null, 600)
+  @include app-heading(("Crimson Text", serif), null, 600);
 }
 
 .app-heading2 {
-  @include app-heading(('Crimson Text', serif), 29px, 600)
+  @include app-heading(("Crimson Text", serif), 29px, 600);
 }
 
 .app-heading3 {
   margin-top: 5px;
   margin-bottom: 5px;
-  @include app-heading(('Montserrat', sans-serif), 18px, 500)
+  @include app-heading(("Montserrat", sans-serif), 18px, 500);
 }
 
 .app-heading4 {
-  @include app-heading(( 'Montserrat', sans-serif), 15px, 500, $text-color-1000)
+  @include app-heading(("Montserrat", sans-serif), 15px, 500, $text-color-1000);
 }
 
 .app-heading5 {
-  @include app-heading(('Crimson Text', serif), 20px, 600)
+  @include app-heading(("Crimson Text", serif), 20px, 600);
 }
 
 .app-heading6 {
   letter-spacing: 3px;
-  @include app-heading(('Inconsolata', monospace), $font-size-xxm, 900, $text-color-300)
+  @include app-heading(
+    ("Inconsolata", monospace),
+    $font-size-xxm,
+    900,
+    $text-color-300
+  );
 }
 
-.app-text { 
-  @include app-text(('Cormorant Garamond', serif), $font-size-md, 500, $text-color-500)
+.app-text {
+  @include app-text(
+    ("Cormorant Garamond", serif),
+    $font-size-md,
+    500,
+    $text-color-500
+  );
 }
 
 .app-navbar {
@@ -70,7 +80,7 @@ body {
   border: 1px solid $light-theme-bg-800;
 }
 
-.icon_3d{
+.icon_3d {
   background-color: $light-theme-bg-700;
   color: $text-color-300;
 }
@@ -85,20 +95,27 @@ body {
   font-weight: 600;
 }
 
+.user-name {
+  text-shadow: 0 0 20px #0fa, 0 0 30px #0fa, 0 0 40px #0fa, 0 0 50px #0fa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+}
+
 .home {
   .breakpoint {
     color: $text-color-100;
   }
 
   .user-profession {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     color: $theme-color;
     font-size: $font-size-lg;
     font-weight: 600;
   }
 
   .user-description {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     color: $text-color-500;
     font-weight: 500;
     font-size: $font-size-md;
@@ -113,5 +130,5 @@ body {
 }
 
 .dark-theme {
-  @include theme_skin()
+  @include theme_skin();
 }
