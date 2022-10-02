@@ -1,6 +1,7 @@
 import React from 'react'
-import CardTagsBottom from '../components/cards/cardTagsBottom/CardTagsBottom'
 import user from '../assets/js/data/user'
+import { CardTagsBottom } from '../stories/cards/cardTagsBottom/CardTagsBottom'
+
 
 const Services = () => {
   return (
@@ -10,9 +11,7 @@ const Services = () => {
         {
           user.services.map((service, index) => (
             <div className="col-md-6 mb-4" key={index}>
-              <div className="card border-0">
-                <CardTagsBottom data={service} />
-              </div>
+              <CardTagsBottom data={service} />
             </div>
           ))
         }

@@ -16,6 +16,12 @@ body {
   margin: 0px;
   height: 100%;
   width: 100%;
+  background-color: rgba($color: $light-theme-bg-300, $alpha: 0.9);
+}
+
+.App-container {
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
   background-image: url("../images/bgimg.jpg");
   background-repeat: no-repeat;
@@ -38,6 +44,7 @@ body {
 
 .app-heading3 {
   margin-top: 5px;
+  margin-bottom: 5px;
   @include app-heading(('Montserrat', sans-serif), 18px, 500)
 }
 

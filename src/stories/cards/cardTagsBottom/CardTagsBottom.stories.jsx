@@ -7,13 +7,12 @@ export default {
    
 }
 const Template = (args) => <CardTagsBottom {...args} />;
-export const Card = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+export const card_tag_bottom = Template.bind({});
 
-Card.args = {
+card_tag_bottom.args = {
     data: {
         name: "Card with Tags",
-        image: "mern-stack",
+        image: "iot",
         tag: [
             "tag1",
             "tag2",
