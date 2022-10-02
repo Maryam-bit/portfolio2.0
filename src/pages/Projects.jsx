@@ -17,8 +17,6 @@ const Projects = () => {
     })
     setCategory(selectedCategory)
   }
-
-  console.log(category)
   return (
     <div className='projects'>
       <h1 className='app-heading1 text-center'>Projects</h1>
