@@ -66,4 +66,15 @@
             color: $dark-theme-text-300;
         }
     }
+
+    .blogs {
+        .card {
+            border-color: $dark-theme-bg-700;
+        }
+    }
+
+    .badge {
+        background-color: $dark-theme-bg-700;
+        color: $text-color-300;
+    }
 }

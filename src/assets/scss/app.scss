@@ -35,7 +35,7 @@ body {
 }
 
 .app-heading1 {
-  @include app-heading(('Crimson Text', serif), null, 600)
+  @include app-heading(('Crimson Text', serif), 40px, 600)
 }
 
 .app-heading2 {
@@ -49,7 +49,7 @@ body {
 }
 
 .app-heading4 {
-  @include app-heading(( 'Montserrat', sans-serif), 15px, 500, $text-color-1000)
+  @include app-heading(( 'Montserrat', sans-serif), 15px, 600, $text-color-1000)
 }
 
 .app-heading5 {
