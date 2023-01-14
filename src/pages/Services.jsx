@@ -1,6 +1,6 @@
 import React from 'react'
 import user from '../assets/js/data/user'
-import { CardTagsBottom } from '../stories/cards/cardTagsBottom/CardTagsBottom'
+import { CardTagsBottom } from '../components/cards/cardTagsBottom/CardTagsBottom'
 
 
 const Services = () => {

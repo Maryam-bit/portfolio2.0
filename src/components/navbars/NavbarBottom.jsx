@@ -83,7 +83,9 @@ const NavigationBar = ({ setDarkTheme, darkTheme }) => {
             :
             <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fad fa-moon-stars icon_3d`} onClick={() => { setDarkTheme(false) }}></i>
         }
-        <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(7)} className={`${NavbarBottomStyles.icon_3d} fad fa-pencil icon_3d`} ></i>
+        <Link to="/blogs">
+          <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(7)} className={`${NavbarBottomStyles.icon_3d} fad fa-pencil icon_3d`} ></i>
+        </Link>
         {/* <i className="fad fa-volume icon-3d"></i> */}
         {/* <i className="fad fa-box-full icon-3d"></i> */}
         {/* <i className="fad fa-brackets-curly icon-3d"></i> */}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import user from '../assets/js/data/user'
-import { FilterButtons } from '../stories/FilterButtons'
-import { CardTopImage } from '../stories/cards/cardTopImage/CardTopImage'
+import { FilterButtons } from '../components/FilterButtons'
+import { CardTopImage } from '../components/cards/cardTopImage/CardTopImage'
 
 const Projects = () => {
   const projectCategories = [...new Set(user.projects.map((Val) => Val.category))];

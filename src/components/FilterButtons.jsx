@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import './FilterButtons.scss'
 
-const FilterButtons = ({ projectCategories, filterCategory }) => {
+export const FilterButtons = ({ projectCategories, filterCategory }) => {
   const [selected, setSelected] = useState('All')
+  console.log('filterCategory', filterCategory)
   const handleSelectedFilter = (category) => {
     setSelected(category)
     filterCategory(category)
@@ -25,4 +28,11 @@ const FilterButtons = ({ projectCategories, filterCategory }) => {
   )
 }
 
-export default FilterButtons
+FilterButtons.propTypes = {
+    projectCategories: PropTypes.array,
+    filterCategory: PropTypes.func
+}
+
+FilterButtons.defaultProps = {
+    projectCategories: ['Mern stack'],
+}
