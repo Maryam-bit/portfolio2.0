@@ -9,7 +9,13 @@ const Home = () => {
       clock
     );
   }
-  setInterval(updateTime, 1000)
+  
+  useEffect(() => {
+    const interval = setInterval(updateTime, 1000)
+
+    return () => clearInterval(interval)
+  })
+  
 
   return (
       <div className='home px-5'>
