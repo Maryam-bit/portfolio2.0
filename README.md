@@ -4,6 +4,5 @@
 
 ## Technologies Used
 * React JS
-* bootstrap
-* SCSS
-* storybook
+* scss
+* Mdx
