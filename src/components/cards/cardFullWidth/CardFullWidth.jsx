@@ -2,10 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import CardFullWidthStyles from './CardFullWidth.module.scss'
 import '../../../assets/scss/app.scss'
+import { Link } from "react-router-dom"
+
 export const CardFullWidth = ({ data }) => {
     return (
         <>
             <div className={`${CardFullWidthStyles.card} card`}>
+              <Link to={`/blogs/${data.id}`}>
+
                 <div className={`${CardFullWidthStyles.body}  p-3`}>
                     <h6 className='app-heading1 fw-normal fs-3'>{data.title}</h6>
                     <div className={`${CardFullWidthStyles.badgeContainer}`}>
@@ -18,9 +22,10 @@ export const CardFullWidth = ({ data }) => {
                         <img className={`${CardFullWidthStyles.img} py-3`} src={require(`../../../assets/images/${data.image}.jpg`)} alt="" />
                         : <div className='py-2'></div>
                     }
-                    <span className='app-heading4 fw-normal' style={{opacity: 0.7, lineHeight: 1.63}}>{data.content}</span>
+                    <span className='app-heading4 fw-normal fs-6' style={{opacity: 0.7, lineHeight: 1.65}}>{data.content}</span>
                     <button className={CardFullWidthStyles.cardButton}>Continue Reading</button>
                </div>
+              </Link>
             </div>
         </>
     )

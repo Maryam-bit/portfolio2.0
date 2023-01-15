@@ -11,7 +11,7 @@ const Blogs = () => {
         {
           user.blogs.map((blog, index) => (
             <div className="mb-4" key={index}>
-              <CardFullWidth data={blog} />
+                <CardFullWidth data={blog} />
             </div>
           ))
         }
