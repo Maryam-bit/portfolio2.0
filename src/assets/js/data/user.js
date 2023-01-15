@@ -36,7 +36,7 @@ const user = {
         {
             name: "Crown Clothing Store",
             image: "crown-clothing-store",
-            previewLink: "https://crwn-clowthing-live.herokuapp.com/",
+            previewLink: "https://crwnclothing2004.surge.sh/",
             codeLink: "https://github.com/Maryam-bit/crown-clothing",
             category: "Front-End"
         },
