@@ -8,5 +8,21 @@
   border-radius: 4px;
 }
 .card {
-    background-color: white;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: .25rem;
+  margin: 8px;
+  .cardBody {
+    padding: 1rem;
+    * {
+      margin: 5px 0px;
+    }
+    a {
+      margin: 0px 5px 0px 0px;
+    }
+  }
+}
+img {
+  vertical-align: middle;
 }

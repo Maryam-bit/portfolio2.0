@@ -1,5 +1,14 @@
 @media (max-width:900px) {
     .App-content {
         width: 92%;
-      }
+    }
+}
+
+@media (max-width:760px) {
+    .grids{
+        .grid-2, .grid-3 {
+            flex-shrink: 0;
+            width: 100%;
+        }
+    }
   }

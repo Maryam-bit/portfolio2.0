@@ -11,7 +11,7 @@ export const FilterButtons = ({ projectCategories, filterCategory }) => {
   }
 
   return (
-    <div className='filter-btns d-flex justify-content-center'>
+    <div className='filter-btns'>
       <button className={(selected === "All" ? "active" : "")} onClick={() => {handleSelectedFilter('All')}}>
         All
       </button>
@@ -19,7 +19,7 @@ export const FilterButtons = ({ projectCategories, filterCategory }) => {
         projectCategories.map((category, index) => {
           return (
             <button className={(selected === category ? "active" : "")} key={index} onClick={() => { handleSelectedFilter(category) }}>
-              {category}
+            {category}
             </button>
           )
         })

@@ -5,9 +5,9 @@ import '../../../assets/scss/app.scss'
 export const CardTopImage = ({ data }) => {
   return (
     <>
-            <div className={`${CardTopImageStyles.card} card border-0`}>
+            <div className={`${CardTopImageStyles.card} card`}>
             <img src={require(`../../../assets/images/${data.image}.jpg`)} alt="" />
-            <div className={`card-body p-3`}>
+            <div className={CardTopImageStyles.cardBody}>
                 <h6 className="app-heading4">{data.name}</h6>
                 <a className={CardTopImageStyles.preview_link} href={data.previewLink} target="_blank" rel="noreferrer" ><i className={`fa fa-eye`}></i></a>
                 <a className={CardTopImageStyles.code_link} href={data.codeLink} target="_blank" rel="noreferrer" ><i className="fa fa-code"></i></a>

@@ -76,15 +76,15 @@ const NavigationBar = ({ setDarkTheme, darkTheme }) => {
         <a href="https://www.linkedin.com/in/maryam-noor-/" target="_blank" rel="noreferrer"  >
           <i ref={navItem5} onMouseOver={() => hovering(5)} onMouseOut={() => hoverOut(5)} className={`${NavbarBottomStyles.icon_3d} fab fa-linkedin icon_3d`}></i>
         </a>
+        <Link to="/blogs">
+          <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(7)} className={`${NavbarBottomStyles.icon_3d} fad fa-pencil icon_3d`} ></i>
+        </Link>
         {
           darkTheme === false ?
-            <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fas fa-sun icon_3d`} onClick={() => { setDarkTheme(true) }}></i>
+            <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fas fa-sun icon_3d`} onClick={() => { setDarkTheme(true) }}></i>
             :
-            <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fad fa-moon-stars icon_3d`} onClick={() => { setDarkTheme(false) }}></i>
+            <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fad fa-moon-stars icon_3d`} onClick={() => { setDarkTheme(false) }}></i>
         }
-        <Link to="/blogs">
-          <i ref={navItem7} onMouseOver={() => hovering(7)} onMouseOut={() => hoverOut(7)} className={`${NavbarBottomStyles.icon_3d} fad fa-pencil icon_3d`} ></i>
-        </Link>
         {/* <i className="fad fa-volume icon-3d"></i> */}
         {/* <i className="fad fa-box-full icon-3d"></i> */}
         {/* <i className="fad fa-brackets-curly icon-3d"></i> */}

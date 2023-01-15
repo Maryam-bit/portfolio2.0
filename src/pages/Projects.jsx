@@ -1,39 +1,40 @@
-import React, { useState } from 'react'
-import user from '../assets/js/data/user'
-import { FilterButtons } from '../components/FilterButtons'
-import { CardTopImage } from '../components/cards/cardTopImage/CardTopImage'
+import React, { useState } from "react";
+import user from "../assets/js/data/user";
+import { FilterButtons } from "../components/FilterButtons";
+import { CardTopImage } from "../components/cards/cardTopImage/CardTopImage";
 
 const Projects = () => {
-  const projectCategories = [...new Set(user.projects.map((Val) => Val.category))];
-  const [category, setCategory] = useState(user.projects)
- 
+  const projectCategories = [
+    ...new Set(user.projects.map((Val) => Val.category)),
+  ];
+  const [category, setCategory] = useState(user.projects);
+
   const filterCategory = (category) => {
-    if(category === 'All') {
-      setCategory(user.projects)
+    if (category === "All") {
+      setCategory(user.projects);
       return;
     }
     const selectedCategory = user.projects.filter((val) => {
-      return val.category === category
-    })
-    setCategory(selectedCategory)
-  }
+      return val.category === category;
+    });
+    setCategory(selectedCategory);
+  };
   return (
-    <div className='projects'>
-      <h1 className='app-heading1 text-center'>Projects</h1>
-      <div className="row mb-4">
-        <FilterButtons filterCategory={filterCategory} projectCategories={projectCategories} />
-      </div>
-      <div className="row mb-5 pb-5">
-        {
-          category.map((project, index) => (
-            <div className="col-md-4 mb-4" key={index}>
-              <CardTopImage data={project} />
-            </div>
-          ))
-        }
+    <div className="projects">
+      <h1 className="app-heading1 text-center">Projects</h1>
+        <FilterButtons
+          filterCategory={filterCategory}
+          projectCategories={projectCategories}
+        />
+      <div className="grids content-child">
+        {category.map((project, index) => (
+          <div className="grid-3" key={index}>
+            <CardTopImage data={project} />
+          </div>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

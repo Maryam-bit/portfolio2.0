@@ -1,18 +1,21 @@
 @import "../assets/scss/variable.scss";
 
 .filter-btns {
-    button {
-      border: none;
-      color: $text-color-900;
-      background-color: $light-theme-bg-900;
-      margin: 7px;
-      padding: 7px 14px;
-      border-radius: 7px;
-      font-weight: 500;
-    }
-    .active {
-      background-color: $theme-color !important;
-      color: $dark-theme-text-100;
-    }
+  display: flex;
+  justify-content: center;
+  button {
+    border: none;
+    color: $text-color-900;
+    background-color: $light-theme-bg-900;
+    margin: 7px;
+    padding: 7px 14px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: $font-size-md;
   }
+  .active {
+    background-color: $theme-color !important;
+    color: $dark-theme-text-100;
+  }
+}
   

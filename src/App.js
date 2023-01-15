@@ -1,4 +1,3 @@
-import './assets/scss/app.scss';
 import NavbarBottom from './components/navbars/NavbarBottom'
 import React, { useState } from "react";
 import AppRouter from "./config/Route"
