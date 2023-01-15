@@ -1,5 +1,5 @@
 {
-  "name": "mya-pp",
+  "name": "portfolio2.0",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,11 +20,22 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
- 
   "devDependencies": {
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
     "sass": "^1.49.9",
     "webpack": "^5.74.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
