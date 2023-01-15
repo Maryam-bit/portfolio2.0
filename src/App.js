@@ -10,15 +10,9 @@ function App() {
     <div className={`${darkTheme ? "dark-theme" : ""}`}>
     <div className="App-container">
       <div className="App">
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-2'></div>
-            <div className='col-lg-8 col-md-12 mt-md-5 mt-3'>
+            <div className='App-content'>
               <AppRouter />
             </div>
-            <div className='col-lg-2'>{darkTheme}</div>
-          </div>
-        </div>
         <NavbarBottom setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
       </div>
       </div>
