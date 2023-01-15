@@ -8,36 +8,43 @@ const user = {
         {
             name: "Covid-19 tracker",
             image: "covid-19-tracker",
-            previewLink: "https://www.facebook.com",
-            codeLink: "https://www.instagram.com",
+            previewLink: "https://covid19-trakcer-2004.surge.sh/",
+            codeLink: "https://github.com/Maryam-bit/covid-19-tracker",
             category: "Front-End"
         },
         {
             name: "Expense tracker",
             image: "expense-tracker",
-            previewLink: "https://www.facebook.com",
-            codeLink: "https://www.instagram.com",
+            previewLink: "http://expense-tracker-2004.surge.sh/",
+            codeLink: "https://github.com/Maryam-bit/expense-tracker-context-api",
             category: "Front-End"
         },
         {
             name: "Shoe Store",
             image: "shoe-store",
-            previewLink: "https://www.facebook.com",
-            codeLink: "https://www.instagram.com",
+            previewLink: "https://shoestore2004-.surge.sh/",
+            codeLink: "https://github.com/Maryam-bit/shoe-store-in-context",
             category: "Front-End"
         },
         {
             name: "OLX clone",
             image: "olx-clone",
-            previewLink: "https://www.facebook.com",
-            codeLink: "https://www.instagram.com",
+            previewLink: "https://olx-react-88571.web.app/",
+            codeLink: "https://github.com/Maryam-bit/olx",
             category: "Front-End"
         },
         {
             name: "Crown Clothing Store",
             image: "crown-clothing-store",
-            previewLink: "https://www.facebook.com",
-            codeLink: "https://www.instagram.com",
+            previewLink: "https://crwn-clowthing-live.herokuapp.com/",
+            codeLink: "https://github.com/Maryam-bit/crown-clothing",
+            category: "Front-End"
+        },
+        {
+            name: "Quizo App",
+            image: "quiz-app",
+            previewLink: "https://quizooapp2004.surge.sh/",
+            codeLink: "https://github.com/Maryam-bit/QuizApp-typescript",
             category: "Front-End"
         },
     ],
