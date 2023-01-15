@@ -2,7 +2,7 @@ const user = {
     about: {
         name: "Maryam Noor",
         profession: "Full Stack Developer",
-        description: "Polyglot Engineer, love finding solutions for a technical problems. <br> Experimenting AIOT and exploring <b>blockchain</b>. \n Currently working at <b>Cowlar.com</b>. Previously at <b>Fiverr</b>.<br><br><span>~~~~~~~</span><br><br> Dreaming about my own technical comapany and team for designing technical solutions."
+        description: "Polyglot Engineer, love finding solutions for a technical problems. <br> Experimenting <b>AIOT</b> and exploring <b>blockchain</b>. \n Currently working at <b>Cowlar.com</b>. Previously at <b>Fiverr</b>.<br><hr> Dreaming about my own technical company and team for designing technical solutions."
     },
     projects: [
         {
