@@ -8,7 +8,7 @@ const Projects = () => {
   const [category, setCategory] = useState(user.projects)
  
   const filterCategory = (category) => {
-    if(category == 'All') {
+    if(category === 'All') {
       setCategory(user.projects)
       return;
     }

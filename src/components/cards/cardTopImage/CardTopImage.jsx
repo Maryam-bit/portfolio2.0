@@ -9,8 +9,8 @@ export const CardTopImage = ({ data }) => {
             <img src={require(`../../../assets/images/${data.image}.jpg`)} alt="" />
             <div className={`card-body p-3`}>
                 <h6 className="app-heading4">{data.name}</h6>
-                <a className={CardTopImageStyles.preview_link} href={data.previewLink} target="_blank"><i className={`fa fa-eye`}></i></a>
-                <a className={CardTopImageStyles.code_link} href={data.codeLink} target="_blank"><i className="fa fa-code"></i></a>
+                <a className={CardTopImageStyles.preview_link} href={data.previewLink} target="_blank" rel="noreferrer" ><i className={`fa fa-eye`}></i></a>
+                <a className={CardTopImageStyles.code_link} href={data.codeLink} target="_blank" rel="noreferrer" ><i className="fa fa-code"></i></a>
             </div>
         </div>
     </>

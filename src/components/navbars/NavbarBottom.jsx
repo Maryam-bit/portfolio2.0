@@ -49,7 +49,6 @@ const NavigationBar = ({ setDarkTheme, darkTheme }) => {
 
   const hoverOut = (id) => {
     for(let i=1; i<=7; i++){
-      // console.log(i)
       eval(`navItem${i}`).current.style.transform = `scale(1.7)`
       eval(`navItem${i}`).current.style.transform = `scale(1.3)`
       eval(`navItem${i}`).current.style.transform = `scale(1)`
@@ -71,14 +70,14 @@ const NavigationBar = ({ setDarkTheme, darkTheme }) => {
         <Link to="services">
           <i  ref={navItem3} onMouseOver={() => hovering(3)} onMouseOut={() => hoverOut(3)} className={`${NavbarBottomStyles.icon_3d} fas fa-hand-holding icon_3d`}></i>
         </Link>
-        <a href="https://github.com/Maryam-bit" target="_blank">
+        <a href="https://github.com/Maryam-bit" target="_blank" rel="noreferrer" >
           <i ref={navItem4} onMouseOver={() => hovering(4)} onMouseOut={() => hoverOut(4)} className={`${NavbarBottomStyles.icon_3d} fab fa-github icon_3d`}></i>
         </a>
-        <a href="https://www.linkedin.com/in/maryam-noor-/" target="_blank">
+        <a href="https://www.linkedin.com/in/maryam-noor-/" target="_blank" rel="noreferrer"  >
           <i ref={navItem5} onMouseOver={() => hovering(5)} onMouseOut={() => hoverOut(5)} className={`${NavbarBottomStyles.icon_3d} fab fa-linkedin icon_3d`}></i>
         </a>
         {
-          darkTheme == false ?
+          darkTheme === false ?
             <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fas fa-sun icon_3d`} onClick={() => { setDarkTheme(true) }}></i>
             :
             <i ref={navItem6} onMouseOver={() => hovering(6)} onMouseOut={() => hoverOut(6)} className={`${NavbarBottomStyles.icon_3d} fad fa-moon-stars icon_3d`} onClick={() => { setDarkTheme(false) }}></i>
